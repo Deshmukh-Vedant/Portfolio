@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="photoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1022" />
+      <stop offset="100%" stop-color="#04060f" />
+    </linearGradient>
+    <linearGradient id="lensRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#photoBg)" rx="16" />
+
+  <!-- Main Showcase Container -->
+  <rect x="50" y="40" width="700" height="370" rx="14" fill="#0d142b" stroke="rgba(168,85,247,0.3)" stroke-width="1.5" />
+
+  <!-- Window Header -->
+  <rect x="50" y="40" width="700" height="45" rx="14" fill="#131b36" />
+  <circle cx="80" cy="62" r="6" fill="#ef4444" />
+  <circle cx="102" cy="62" r="6" fill="#f59e0b" />
+  <circle cx="124" cy="62" r="6" fill="#10b981" />
+  <text x="400" y="67" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="13" text-anchor="middle">Responsive Photography Portfolio &amp; Visual Showcase</text>
+
+  <!-- Left: Featured Hero Shot Display -->
+  <rect x="75" y="105" width="370" height="280" rx="10" fill="#151d3b" />
+  <!-- Lens circle graphic -->
+  <circle cx="260" cy="230" r="85" fill="#0c1226" stroke="url(#lensRing)" stroke-width="3" />
+  <circle cx="260" cy="230" r="60" fill="#111a36" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
+  <circle cx="260" cy="230" r="35" fill="#070c1a" />
+  <circle cx="250" cy="220" r="10" fill="#38bdf8" opacity="0.6" />
+  <text x="260" y="355" fill="#e2e8f0" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="13" text-anchor="middle">Visual Storytelling &amp; Gallery Grid</text>
+
+  <!-- Right: Masonry Gallery Cards Preview -->
+  <g>
+    <!-- Gallery Tile 1 -->
+    <rect x="465" y="105" width="120" height="130" rx="8" fill="#1c2546" stroke="rgba(255,255,255,0.06)" />
+    <path d="M475 210 L505 180 L535 210 L555 195 L575 220" stroke="#a855f7" stroke-width="2" fill="none" />
+    <circle cx="500" cy="140" r="10" fill="#f59e0b" opacity="0.8" />
+    
+    <!-- Gallery Tile 2 -->
+    <rect x="600" y="105" width="125" height="85" rx="8" fill="#1c2546" stroke="rgba(255,255,255,0.06)" />
+    <rect x="615" y="125" width="95" height="10" rx="3" fill="#334155" />
+    <rect x="615" y="145" width="60" height="8" rx="3" fill="#64748b" />
+
+    <!-- Gallery Tile 3 -->
+    <rect x="465" y="250" width="120" height="135" rx="8" fill="#1c2546" stroke="rgba(255,255,255,0.06)" />
+    <circle cx="525" cy="300" r="24" fill="#06b6d4" opacity="0.4" />
+    <text x="525" y="355" fill="#94a3b8" font-family="sans-serif" font-size="10" text-anchor="middle">Portraits</text>
+
+    <!-- Gallery Tile 4 -->
+    <rect x="600" y="205" width="125" height="180" rx="8" fill="#1c2546" stroke="rgba(255,255,255,0.06)" />
+    <path d="M610 350 L635 320 L665 350 L685 330 L715 365" stroke="#38bdf8" stroke-width="2" fill="none" />
+    <circle cx="685" cy="245" r="14" fill="#ec4899" opacity="0.7" />
+    <text x="662" y="375" fill="#94a3b8" font-family="sans-serif" font-size="10" text-anchor="middle">Landscapes</text>
+  </g>
+</svg>
+

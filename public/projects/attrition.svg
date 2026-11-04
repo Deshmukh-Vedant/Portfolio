@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d20" />
+      <stop offset="100%" stop-color="#050814" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)" rx="16" />
+  
+  <!-- Subtle Grid -->
+  <g stroke="rgba(255,255,255,0.04)" stroke-width="1">
+    <line x1="0" y1="90" x2="800" y2="90" />
+    <line x1="0" y1="180" x2="800" y2="180" />
+    <line x1="0" y1="270" x2="800" y2="270" />
+    <line x1="0" y1="360" x2="800" y2="360" />
+    <line x1="160" y1="0" x2="160" y2="450" />
+    <line x1="320" y1="0" x2="320" y2="450" />
+    <line x1="480" y1="0" x2="480" y2="450" />
+    <line x1="640" y1="0" x2="640" y2="450" />
+  </g>
+
+  <!-- Dashboard Window Card -->
+  <rect x="50" y="40" width="700" height="370" rx="14" fill="#0c1228" stroke="rgba(168,85,247,0.3)" stroke-width="1.5" />
+  
+  <!-- Window Header -->
+  <rect x="50" y="40" width="700" height="45" rx="14" fill="#131b38" />
+  <circle cx="80" cy="62" r="6" fill="#ef4444" />
+  <circle cx="102" cy="62" r="6" fill="#f59e0b" />
+  <circle cx="124" cy="62" r="6" fill="#10b981" />
+  <text x="400" y="67" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="13" text-anchor="middle">HR Attrition Predictor &amp; Intervention Pipeline (Gradient Boosting)</text>
+
+  <!-- Left Panel: ML Analytics & Probabilities -->
+  <rect x="80" y="110" width="310" height="270" rx="10" fill="#080c1d" stroke="rgba(59,130,246,0.25)" stroke-width="1" />
+  <text x="100" y="140" fill="#f1f5f9" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="16">Attrition Risk Metrics</text>
+  <text x="100" y="160" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="11">Dataset: IBM HR Analytics | Classifier: Gradient Boosting</text>
+  
+  <!-- Metrics Chart bars -->
+  <text x="100" y="195" fill="#94a3b8" font-family="sans-serif" font-size="12">Class: Stayed (Low Risk)</text>
+  <rect x="100" y="205" width="270" height="12" rx="6" fill="#1e293b" />
+  <rect x="100" y="205" width="220" height="12" rx="6" fill="#10b981" />
+  <text x="330" y="215" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">81.5%</text>
+
+  <text x="100" y="245" fill="#94a3b8" font-family="sans-serif" font-size="12">Class: Left (Predicted Risk)</text>
+  <rect x="100" y="255" width="270" height="12" rx="6" fill="#1e293b" />
+  <rect x="100" y="255" width="85" height="12" rx="6" fill="#ef4444" />
+  <text x="200" y="265" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">18.5%</text>
+
+  <!-- Key Predictors -->
+  <rect x="100" y="290" width="270" height="70" rx="8" fill="#111827" stroke="rgba(255,255,255,0.06)" />
+  <text x="115" y="312" fill="#cbd5e1" font-family="sans-serif" font-size="11" font-weight="600">Top Weighted Factors</text>
+  <text x="115" y="332" fill="#a855f7" font-family="'JetBrains Mono', monospace" font-size="10">• OverTime • MonthlyIncome</text>
+  <text x="115" y="348" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">• YearsAtCompany • JobRole</text>
+
+  <!-- Right Panel: Automation & Workflow Integration -->
+  <rect x="410" y="110" width="310" height="270" rx="10" fill="#080c1d" stroke="rgba(168,85,247,0.25)" stroke-width="1" />
+  <text x="430" y="140" fill="#f1f5f9" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="16">n8n HR Intervention</text>
+  <text x="430" y="160" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="11">Automated Google Calendar &amp; Meet Sync</text>
+
+  <!-- Workflow node 1 -->
+  <rect x="430" y="185" width="270" height="46" rx="8" fill="#131b38" stroke="rgba(168,85,247,0.4)" />
+  <circle cx="450" cy="208" r="8" fill="#a855f7" />
+  <text x="468" y="205" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="600">Risk Threshold Triggered</text>
+  <text x="468" y="221" fill="#94a3b8" font-family="sans-serif" font-size="10">Class: 'Left' predicted &gt; 0.65</text>
+
+  <!-- Down arrow connector -->
+  <path d="M565 231 L565 245 M560 240 L565 245 L570 240" stroke="#a855f7" stroke-width="2" fill="none" />
+
+  <!-- Workflow node 2 -->
+  <rect x="430" y="247" width="270" height="46" rx="8" fill="#131b38" stroke="rgba(59,130,246,0.4)" />
+  <circle cx="450" cy="270" r="8" fill="#3b82f6" />
+  <text x="468" y="267" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="600">n8n Automation Engine</text>
+  <text x="468" y="283" fill="#94a3b8" font-family="sans-serif" font-size="10">Dispatches webhook to calendar scheduler</text>
+
+  <!-- Down arrow connector -->
+  <path d="M565 293 L565 307 M560 302 L565 307 L570 302" stroke="#3b82f6" stroke-width="2" fill="none" />
+
+  <!-- Workflow node 3 -->
+  <rect x="430" y="309" width="270" height="52" rx="8" fill="#131b38" stroke="rgba(16,185,129,0.4)" />
+  <circle cx="450" cy="335" r="8" fill="#10b981" />
+  <text x="468" y="329" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="600">Google Calendar &amp; Meet Scheduled</text>
+  <text x="468" y="345" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="10">1-on-1 HR Retention Check-in Created</text>
+</svg>
+

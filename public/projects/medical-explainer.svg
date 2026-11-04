@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="medBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e22" />
+      <stop offset="100%" stop-color="#040612" />
+    </linearGradient>
+    <linearGradient id="medAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#medBg)" rx="16" />
+  
+  <!-- Subtle Grid -->
+  <g stroke="rgba(255,255,255,0.04)" stroke-width="1">
+    <line x1="0" y1="90" x2="800" y2="90" />
+    <line x1="0" y1="180" x2="800" y2="180" />
+    <line x1="0" y1="270" x2="800" y2="270" />
+    <line x1="0" y1="360" x2="800" y2="360" />
+  </g>
+
+  <!-- Main Window -->
+  <rect x="50" y="40" width="700" height="370" rx="14" fill="#0d152e" stroke="rgba(6,182,212,0.3)" stroke-width="1.5" />
+  
+  <!-- Window Header -->
+  <rect x="50" y="40" width="700" height="45" rx="14" fill="#131e3f" />
+  <circle cx="80" cy="62" r="6" fill="#ef4444" />
+  <circle cx="102" cy="62" r="6" fill="#f59e0b" />
+  <circle cx="124" cy="62" r="6" fill="#10b981" />
+  <text x="400" y="67" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="13" text-anchor="middle">AI Medical Report Explainer (FastAPI + Gemini API)</text>
+
+  <!-- Left: Medical Report Upload Preview -->
+  <rect x="80" y="105" width="290" height="255" rx="10" fill="#090f23" stroke="rgba(255,255,255,0.08)" />
+  <text x="100" y="135" fill="#f1f5f9" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="15">Uploaded Report: CBC.pdf</text>
+  <rect x="100" y="150" width="250" height="1" fill="#1e293b" />
+  
+  <!-- Medical report raw metrics -->
+  <text x="100" y="180" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12">WBC Count: 11.8 x10^3/uL [HIGH]</text>
+  <text x="100" y="205" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12">Hemoglobin: 14.2 g/dL [NORMAL]</text>
+  <text x="100" y="230" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12">Platelet Count: 280 x10^3/uL</text>
+  <text x="100" y="255" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12">MCV: 88.5 fL [NORMAL]</text>
+  
+  <rect x="100" y="280" width="250" height="60" rx="8" fill="#1e1b4b" stroke="rgba(168,85,247,0.4)" />
+  <text x="115" y="303" fill="#c084fc" font-family="sans-serif" font-size="11" font-weight="600">FastAPI Backend Pipeline</text>
+  <text x="115" y="323" fill="#94a3b8" font-family="sans-serif" font-size="10">Parsing report tokens &amp; querying Gemini</text>
+
+  <!-- Right: Simplified Explanation & Bilingual Tabs -->
+  <rect x="390" y="105" width="330" height="255" rx="10" fill="#090f23" stroke="rgba(6,182,212,0.3)" />
+  
+  <!-- Language Selector Pill -->
+  <rect x="410" y="125" width="80" height="28" rx="14" fill="#06b6d4" />
+  <text x="450" y="143" fill="#04121e" font-family="sans-serif" font-weight="700" font-size="11" text-anchor="middle">English</text>
+  <rect x="495" y="125" width="85" height="28" rx="14" fill="#1e293b" />
+  <text x="537" y="143" fill="#94a3b8" font-family="sans-serif" font-weight="600" font-size="11" text-anchor="middle">मराठी (Marathi)</text>
+
+  <!-- Simplified output content -->
+  <rect x="410" y="165" width="290" height="180" rx="8" fill="#111c38" />
+  <text x="425" y="190" fill="#38bdf8" font-family="sans-serif" font-weight="700" font-size="12">✨ Simplified Plain-Language Summary</text>
+  <text x="425" y="215" fill="#e2e8f0" font-family="sans-serif" font-size="11">• White Blood Cells are slightly elevated,</text>
+  <text x="435" y="233" fill="#94a3b8" font-family="sans-serif" font-size="10">often indicating your immune system is responding</text>
+  <text x="435" y="248" fill="#94a3b8" font-family="sans-serif" font-size="10">to a minor infection or temporary stress.</text>
+  <text x="425" y="272" fill="#e2e8f0" font-family="sans-serif" font-size="11">• Hemoglobin levels are in a healthy range.</text>
+
+  <!-- Disclaimer bar -->
+  <rect x="50" y="375" width="700" height="35" rx="8" fill="#1a1423" stroke="rgba(245,158,11,0.2)" />
+  <text x="400" y="397" fill="#fbbf24" font-family="sans-serif" font-size="11" text-anchor="middle">⚠️ Disclaimer: For informational explanations only. Not a substitute for professional medical advice.</text>
+</svg>
+
