@@ -9,10 +9,10 @@ export const personalData = {
   
   // Replace these placeholders with your actual personal links and info
   contact: {
-    email: "vedant.deshmukh@example.com", // [REPLACE WITH YOUR ACTUAL EMAIL]
-    linkedin: "https://linkedin.com/in/vedant-deshmukh", // [REPLACE WITH YOUR LINKEDIN URL]
-    github: "https://github.com/vedant-deshmukh", // [REPLACE WITH YOUR GITHUB URL]
-    location: "Maharashtra, India", // [REPLACE WITH YOUR LOCATION]
+    email: "vedantdeshmukh975@gmail.com",
+    linkedin: "https://linkedin.com/in/vedant-deshmukh", // [REPLACE WITH YOUR LINKEDIN URL IF DIFFERENT]
+    github: "https://github.com/Deshmukh-Vedant",
+    location: "Pune, Maharashtra, India",
   },
 
   badges: [

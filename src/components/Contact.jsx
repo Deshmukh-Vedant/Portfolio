@@ -155,7 +155,7 @@ export default function Contact() {
                 <div>
                   <span className="text-xs font-mono uppercase text-slate-400 tracking-wider">GitHub Repositories</span>
                   <h3 className="text-base font-semibold text-white group-hover:text-cyan-300 transition-colors">
-                    github.com/vedant-deshmukh
+                    github.com/Deshmukh-Vedant
                   </h3>
                   <span className="text-[11px] text-slate-500">(Code &amp; Open Source)</span>
                 </div>
