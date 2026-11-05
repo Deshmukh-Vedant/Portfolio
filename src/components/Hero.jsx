@@ -157,12 +157,15 @@ export default function Hero() {
 
               {/* Glass Frame Card */}
               <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-3xl bg-[#090d20] border border-purple-500/40 p-2.5 shadow-2xl overflow-hidden flex items-center justify-center">
-                {/* Profile Placeholder Image */}
+                {/* Profile Real Photo / Avatar */}
                 <img
-                  src="/placeholder-avatar.svg"
+                  src={personalData.profileImage || "/profile.jpg"}
                   alt="Vedant Deshmukh - Developer Profile"
                   className="w-full h-full object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105"
                   loading="eager"
+                  onError={(e) => {
+                    e.currentTarget.src = "/placeholder-avatar.svg";
+                  }}
                 />
 
                 {/* Subtle Scanline / Tech Overlay */}

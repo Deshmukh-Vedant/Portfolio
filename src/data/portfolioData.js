@@ -22,6 +22,7 @@ export const personalData = {
   ],
 
   resumeUrl: "/resume.pdf", // Place your resume.pdf in the /public folder
+  profileImage: "/profile.jpg",
 };
 
 export const skillsData = [
