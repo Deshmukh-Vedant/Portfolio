@@ -62,9 +62,16 @@ export default function Experience() {
 
                   <div className="glass-card rounded-2xl p-6 border border-slate-800 hover:border-purple-500/40 transition-all duration-300">
                     <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                      <span className="px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/15 border border-purple-500/30 text-purple-300">
-                        {edu.status}
-                      </span>
+                      <div className="flex items-center gap-2">
+                        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/15 border border-purple-500/30 text-purple-300">
+                          {edu.status}
+                        </span>
+                        {edu.cgpa && (
+                          <span className="px-2.5 py-1 rounded-full text-xs font-mono font-semibold bg-emerald-500/15 border border-emerald-500/30 text-emerald-300">
+                            CGPA: {edu.cgpa}
+                          </span>
+                        )}
+                      </div>
                       <div className="flex items-center gap-1.5 text-xs font-mono text-slate-400">
                         <Calendar className="w-3.5 h-3.5 text-cyan-400" />
                         <span>{edu.graduation}</span>

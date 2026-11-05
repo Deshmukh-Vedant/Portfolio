@@ -73,8 +73,8 @@ export const projectsData = [
       "Google Calendar",
       "Google Meet"
     ],
-    github: "https://github.com/your-username/employee-attrition-prediction", // [REPLACE WITH GITHUB URL]
-    liveDemo: null, // [REPLACE WITH LIVE DEMO URL IF DEPLOYED]
+    github: "https://github.com/Deshmukh-Vedant", // Main profile or repo
+    liveDemo: null,
     image: "/projects/attrition.svg",
     badge: "ML + Workflow Automation"
   },
@@ -98,8 +98,8 @@ export const projectsData = [
       "JavaScript",
       "Gemini API"
     ],
-    github: "https://github.com/your-username/ai-medical-report-explainer", // [REPLACE WITH GITHUB URL]
-    liveDemo: null, // [REPLACE WITH LIVE DEMO URL IF DEPLOYED]
+    github: "https://github.com/Deshmukh-Vedant/medical-report-explainer",
+    liveDemo: null,
     image: "/projects/medical-explainer.svg",
     badge: "Generative AI"
   },
@@ -120,8 +120,8 @@ export const projectsData = [
       "Tailwind CSS",
       "MongoDB"
     ],
-    github: "https://github.com/your-username/photography-portfolio", // [REPLACE WITH GITHUB URL]
-    liveDemo: null, // [REPLACE WITH LIVE DEMO URL IF DEPLOYED]
+    github: "https://github.com/Deshmukh-Vedant/Photography_order_Booking",
+    liveDemo: null,
     image: "/projects/photography.svg",
     badge: "Creative Frontend"
   }
@@ -130,9 +130,10 @@ export const projectsData = [
 export const educationData = [
   {
     degree: "B.Tech in Computer Engineering",
-    institution: "[Your College / University Name]", // [REPLACE WITH YOUR ACTUAL COLLEGE NAME]
+    institution: "Prof. Ram Meghe College of Technology and Research",
     status: "Final Year Student",
-    graduation: "Expected [Graduation Year, e.g. 2025]", // [REPLACE WITH YOUR GRADUATION YEAR]
+    graduation: "2024 – 2027",
+    cgpa: "8.33",
     description: "Rigorous coursework in Data Structures, Algorithms, Database Management Systems, Object-Oriented Programming, Operating Systems, and Software Engineering."
   }
 ];
@@ -141,7 +142,7 @@ export const experienceData = [
   {
     role: "Web Development Intern",
     organization: "Passion Software Solutions",
-    duration: "[Internship Duration, e.g. June 2024 - August 2024]", // [REPLACE WITH ACTUAL DATES]
+    duration: "June 2023 – July 2023",
     certificate: "Certified by Passion Software Solutions: Web Development Intern",
     type: "Internship",
     description: "Worked on responsive frontend components, web application modules, and collaborated on real-world development tasks using modern web development workflows."
@@ -152,22 +153,22 @@ export const certificationsData = [
   {
     title: "Deloitte Data Analytics Job Simulation",
     issuer: "Deloitte (Forage)",
-    date: "[Completion Date Placeholder]", // [REPLACE WITH COMPLETION DATE]
-    credentialUrl: "https://forage.com", // [REPLACE WITH CREDENTIAL LINK]
+    date: "Completed",
+    credentialUrl: "https://forage.com",
     description: "Practical simulation encompassing business analytics, data discovery, forensic technology, and communicating insights to technical stakeholders."
   },
   {
     title: "Certified by Passion Software Solutions: Web Development Intern",
     issuer: "Passion Software Solutions",
-    date: "[Completion Date Placeholder]", // [REPLACE WITH COMPLETION DATE]
-    credentialUrl: "#", // [REPLACE WITH CREDENTIAL LINK]
+    date: "July 2023",
+    credentialUrl: "#",
     description: "Official certificate of completion recognizing hands-on experience and contributions as a Web Development Intern."
   },
   {
     title: "Full Stack Web Development & Modern Technologies",
-    issuer: "[Issuing Platform / Academy]", // [REPLACE WITH ISSUER]
-    date: "[Completion Date Placeholder]", // [REPLACE WITH DATE]
-    credentialUrl: "#", // [REPLACE WITH LINK]
+    issuer: "Self-Paced / Academic Projects",
+    date: "Active",
+    credentialUrl: "#",
     description: "Comprehensive development practice covering JavaScript ecosystem, React frontends, Node/Express backends, and relational/NoSQL databases."
   }
 ];
